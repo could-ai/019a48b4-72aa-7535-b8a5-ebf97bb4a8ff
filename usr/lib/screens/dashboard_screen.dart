@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../models/subscription.dart';
+import '../widgets/loopless_logo.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -73,7 +74,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Dashboard'),
+          title: const LooplessLogo(),
           centerTitle: true,
           actions: [
             IconButton(
